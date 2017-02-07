@@ -1,0 +1,16 @@
+<table class="table">
+    <thead>
+        <tr>
+        <th>Tên sản phẩm</th>
+        <th>Giá</th>
+        <th>Mô tả</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="product in listProduct">
+            <td>{{product.TenSanPham}}</td>
+            <td>{{product.Gia}}</td>
+            <td>{{product.MoTa}}</td>
+        </tr>
+    </tbody>
+</table>
