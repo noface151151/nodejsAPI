@@ -1,9 +1,15 @@
 <div class="container">
     <div class="row">
         <div class="col-md-4">
-            <label>Tên sản phẩm: </label><input type='text' class='form-control' ng-model="product.TenSanPham" disabled >
-            <label>Giá sản phẩm : </label><input type='text' class='form-control' ng-model="product.Gia" disabled >
-            <label>Mô tả : </label><input type='text' class='form-control' ng-model="product.MoTa" disabled >          
+            <label>Tên sản phẩm: </label><input type='text' class='form-control' ng-model="product.TenSanPham" disabled>
+            <label>Giá sản phẩm : </label><input type='text' class='form-control' ng-model="product.Gia" disabled>
+            <label>Mô tả : </label><input type='text' class='form-control' ng-model="product.MoTa" disabled>
+            <label>Hình ảnh : </label>
+            <img  class="img-responsive" ng-src="./HinhAnh/{{product.HinhAnh}}">
         </div>
+
     </div>
+    
+    <br/>
+    <p data-placement="top" data-toggle="tooltip" title="Back"><a class="btn btn-primary btn-xs" data-title="Back" href="/"><span class="glyphicon glyphicon-arrow-left"></span></a></p>
 </div>

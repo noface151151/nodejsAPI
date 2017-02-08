@@ -4,13 +4,15 @@
         <th>Tên sản phẩm</th>
         <th>Giá</th>
         <th>Mô tả</th>
+        <th>Chi tiết</th>
         </tr>
     </thead>
     <tbody>
         <tr ng-repeat="product in listProduct">
             <td>{{product.TenSanPham}}</td>
-            <td>{{product.Gia}}</td>
+            <td>{{product.Gia| currency:"":0}}</td>
             <td>{{product.MoTa}}</td>
+            <td><p data-placement="top" data-toggle="tooltip" title="Chi tiết"><a class="btn btn-primary btn-xs" data-title="Chi tiết" href="/productDetail/{{product.Id}}"><span class="glyphicon glyphicon-list-alt"></span></a></p></td>
         </tr>
     </tbody>
 </table>

@@ -1,7 +1,7 @@
 exports.dbconfig = {
-    user: 'namdo',
-    password: 'ronaldo159',
-    server: 'LVD-MUC0126ZAF\\SQLEXPRESS',
+    user: 'sa',
+    password: 'ronaldo147',
+    server: 'DESKTOP-N2G0LQ3\\SQLEXPRESS',
     database: 'WebServiceShop'
 };
 exports.webPort=3000;
